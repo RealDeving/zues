@@ -1,0 +1,5 @@
+name: AntiCheat
+version: 0.1
+author: Zibb and Rainnny
+main:  org.anticheat.zues.Zues
+depend: [ProtocolLib]

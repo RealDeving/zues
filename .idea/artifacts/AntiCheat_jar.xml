@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AntiCheat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AntiCheat_jar</output-path>
+    <root id="archive" name="AntiCheat.jar">
+      <element id="module-output" name="AntiCheat" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ProtocolLib.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

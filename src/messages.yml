@@ -1,0 +1,49 @@
+prefix: "§6§lAntiCheat §8»"
+
+# Variables: $prefix, $server, $player, $check, $checkData, $vl and $ping
+alert: "$prefix §e$player §7has failed §6$check §7§o($data&7&o) &7[§ax$vl§7]"
+severity1: "&a"
+severity2: "&6"
+severity3: "&c"
+
+not_online: "§cCould not find a player by the name of '$player'"
+
+ban:
+  # Variables: $server and $player
+  broadcast:
+    - "§8§m-----------------------------------------------------"
+    - "§e$player §7has been removed from the network for cheating"
+    - "§7Reason: §6Unfair Advantage"
+    - "§8§m-----------------------------------------------------"
+
+commands:
+  zues:
+    help:
+      - "§8§m-----------------------------------------------------"
+      - '&6&lAntiCheat &8» &7Help'
+      - ''
+      - '&e/zues help &8&m-&7 Shows this help menu.'
+      - '&e/zues list &8&m-&7 Lists all checks.'
+      - '&e/zues toggle <check> &8&m-&7 Toggles a check.'
+      - '&e/zues resetvio <player> &8&m-&7 Resets a player''s violations'
+      - '&e/zues debug &8&m-&7 Toggles debug mode.'
+      - '&e/zues reload &8&m-&7 Reloads the config.'
+      - "§8§m-----------------------------------------------------"
+    # Variables: $checks
+    list:
+      - "§8§m-----------------------------------------------------"
+      - '&6&lAntiCheat &8» &7Checks'
+      - ''
+      - '&7$checks'
+      - "§8§m-----------------------------------------------------"
+    reloading: "&7Reloading config files..."
+    # Variables: $time
+    reload_success: "&aSuccessfully reloaded config files in $timems"
+    reload_failed: "&cFailed to reload config files. Check the console for more information."
+    invalid_check: "&cThe check &6$check &cdoes not exist."
+    toggled_check: "&7The check &6$check &7has been toggled: &f$state"
+    toggled_debug: "&7Toggled debug: &f$state"
+    resetviolations_success: "&aSuccessfully reset $player's violations."
+    resetviolations_failed: "&cFailed to reset $player's violations. Check console for more info."
+  alerts:
+    toggled: "&7Your alerts have been toggled: &f$state"

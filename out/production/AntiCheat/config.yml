@@ -1,0 +1,31 @@
+database:
+  # Types: file and sql
+  type: file
+  sql:
+    host: 'localhost'
+    port: 3306
+    username: 'user_name'
+    password: 'password'
+    database: 'database_name'
+
+prefix: '§6§lAntiCheat §8»'
+# Makes it so the check (E.g "Reach") will be colored by the severity.
+check_colors: true
+# Variables: $prefix, $server, $player, $check, $checkData, $vl and $ping
+alert: '$prefix §e$player §7has failed §6$check §7§o($data&7&o) &7[§ax$vl§7]'
+severity1: "&a"
+severity2: "&6"
+severity3: "&c"
+
+debug: false
+
+ban:
+  command: 'ban $player Unfair Advantage -s'
+  # E.g: if you hit 50 alerts, you will be banned
+  ban_count: 50
+  # Variables: $server and $player
+  broadcast:
+  - '§7§m-----------------------------------------------------'
+  - '§e$player §7has been removed from the network for cheating'
+  - '§7Reason: §6Unfair Advantage'
+  - '§7§m-----------------------------------------------------'

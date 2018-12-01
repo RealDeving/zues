@@ -1,0 +1,21 @@
+plugin_license: ""
+
+database:
+  # Types: file and sql
+  type: file
+  sql:
+    host: "localhost"
+    port: 3306
+    username: "user_name"
+    password: "password"
+    database: "database_name"
+
+# Makes it so the check (E.g "Reach") will be colored by the severity.
+check_colors: true
+
+debug: false
+
+ban:
+  command: "ban $player Unfair Advantage -s"
+  # E.g: if you hit 50 alerts, you will be banned
+  ban_count: 50
